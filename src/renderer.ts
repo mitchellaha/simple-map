@@ -26,6 +26,8 @@
  * ```
  */
 
-import './index.css';
+import './css/index.css'
+import './css/leaflet.css';
+import './map.ts'
 
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
