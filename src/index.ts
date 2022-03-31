@@ -33,29 +33,6 @@ const menu = Menu.buildFromTemplate([
             { role: 'toggleDevTools' },
         ],
     },
-    // {
-    //     label: 'Map Control',
-    //     submenu: [
-    //         {
-    //             label: 'OpenStreetMap',
-    //             click: () => {
-    //                 console.log('OpenStreetMap Toggle');
-    //             }
-    //         },
-    //         {
-    //             label: 'NearMap',
-    //             click: () => {
-    //                 console.log('NearMap Toggle');
-    //             }
-    //         },
-    //         {
-    //             label: 'All Off',
-    //             click: () => {
-    //                 console.log('All Off Toggle');
-    //             }
-    //         }
-    //     ]
-    // },
     {
         label: 'Edit',
         submenu: [
