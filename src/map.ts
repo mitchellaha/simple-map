@@ -1,9 +1,6 @@
 import * as L from 'leaflet';
 import { Geocoder } from 'leaflet-control-geocoder';
 import { Secrets } from './secrets';
-// import leaflet images
-
-
 
 const nmapAPIKey = Secrets.nearmapAPIKey;
 
@@ -39,8 +36,8 @@ const GeocoderControl = new Geocoder({
     defaultMarkGeocode: false,
     showResultIcons: false,
     placeholder: 'Search for places',
-})
-GeocoderControl.addTo(map);
+}).addTo(map)
+
 GeocoderControl.on('markgeocode', function (e) {
     // console.log(e); // ? uncomment this if you want to inspect the event object
     map.fitBounds(e.geocode.bbox);
