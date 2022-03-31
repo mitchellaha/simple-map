@@ -29,7 +29,6 @@
 import './css/index.css'
 import './css/leaflet.css';
 import "leaflet-control-geocoder/dist/Control.Geocoder.css";
-// import "leaflet-control-geocoder/dist/Control.Geocoder.js";
 import './map.ts'
 
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
