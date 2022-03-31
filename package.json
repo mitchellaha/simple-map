@@ -2,7 +2,7 @@
   "name": "simple-map",
   "productName": "simple-map",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "A Simple Leaflet Map Application with OSM, Nearmap, and GeoCoding",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
@@ -11,7 +11,7 @@
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
-  "keywords": [],
+  "keywords": ["leaflet", "map", "osm", "nearmap", "geocoding"],
   "author": {
     "name": "Mitch Andrews",
     "email": "themitchellandrews@gmail.com"
