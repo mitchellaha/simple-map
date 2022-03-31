@@ -33,6 +33,7 @@ L.control.layers({
 
 const GeocoderControl = new Geocoder({
     position: 'topleft',
+    collapsed: false,
     defaultMarkGeocode: false,
     showResultIcons: false,
     placeholder: 'Search for places',
