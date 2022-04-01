@@ -7,18 +7,16 @@ const nmapAPIKey = Secrets.nearmapAPIKey;
 const map = L.map('map', {
     center: [39.674, -105.002],
     zoom: 15,
-    minZoom: 2,
-    maxZoom: 18,
     zoomControl: false,
 });
 
 const openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
 
 const nearMap = L.tileLayer('https://api.nearmap.com/tiles/v3/Vert/{z}/{x}/{y}.img?apikey={accessToken}&tertiary=satellite', {
     attribution: '&copy; <a href="https://www.nearmap.com/">Nearmap</a> contributors',
-    maxZoom: 25,
+    maxZoom: 22,
     tileSize: 256,
     accessToken: nmapAPIKey
 });
