@@ -15,6 +15,10 @@ const createWindow = (): void => {
     const mainWindow = new BrowserWindow({
         height: 1080,
         width: 1920,
+        webPreferences: {
+            nodeIntegration: true,
+        },
+        title: 'Simple Map',
     });
 
     // and load the index.html of the app.

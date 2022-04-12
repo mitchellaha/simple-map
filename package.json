@@ -11,7 +11,13 @@
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
-  "keywords": ["leaflet", "map", "osm", "nearmap", "geocoding"],
+  "keywords": [
+    "leaflet",
+    "map",
+    "osm",
+    "nearmap",
+    "geocoding"
+  ],
   "author": {
     "name": "Mitch Andrews",
     "email": "themitchellandrews@gmail.com"
@@ -24,7 +30,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "simple_map"
+            "name": "Simple Map"
           }
         },
         {

@@ -64,6 +64,17 @@ L.control.zoom({
 
 
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+map.on('contextmenu', (e: { latlng: any; }) => {
+    console.log(e.latlng);
+    // create a popup with the coordinates
+    L.popup()
+        .setLatLng(e.latlng)
+        .setContent(`
+            <p>${e.latlng.lat}, ${e.latlng.lng}</p>
+            `)
+        .openOn(map);
+});
 
 
 
